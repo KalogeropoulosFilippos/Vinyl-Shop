@@ -1,0 +1,71 @@
+﻿@model IEnumerable<OnlineShoppingStore.Models.ViewModels.ProductViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br />
+<br />
+<div class="container">
+    <div id="themeSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#themeSlider" data-slide-to="1"></li>
+            <li data-target="#themeSlider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img style="height:400px; width:100%" src="../Images/florencia-viadana-f74kZNWhfps-unsplash.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                    <h3>Grow your collection</h3>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img style="height:400px; width:100%" src="../Images/mitchel-lensink-KmGMMxVv0_Q-unsplash.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                    <h3>Or start it</h3>
+
+                </div>
+            </div>
+            <div class="item active">
+                <div class="imgOverlay"></div>
+                <img style="height:400px; width:100%" src="../Images/eric-krull-fi3_lDi3qPE-unsplash.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <h3>Your can give them as gift</h3>
+                    
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+            <span class="fa fa-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#themeSlider" data-slide="next">
+            <span class="fa fa-chevron-right"></span>
+        </a>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+
+                <h2>What is new!!</h2>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="divProducts">
+        @Html.Partial("_ProductsForHome", ViewData.Model)
+
+    </div>
+</div>
