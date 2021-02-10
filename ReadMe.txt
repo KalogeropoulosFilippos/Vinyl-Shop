@@ -1,5 +1,6 @@
-First restore the database using the .bak file that you can find at: ~\OnlineShoppingStore\Database files
+Implemeneted using C#,ASP.NET FRAMEWORK,SIGNALR API and PAYPAL API.
 
+First restore the database using the .bak file that you can find at: ~\OnlineShoppingStore\Database files
 If you get the "~/bin/roslyn.exe does not exist" error then copy paste the following lines into the OnlineShopppingStore.csproj file
 
 
